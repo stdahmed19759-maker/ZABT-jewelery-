@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZABT | Jewellery & Watches</title>
+<style>
+:root{--gold:#c59e56;--ink:#171719;--cream:#f7f4ee}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:var(--cream);color:var(--ink)}
+header{background:#171719;color:white;padding:26px 8%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}header strong{font-size:28px;letter-spacing:8px;color:var(--gold)}header span{font-size:12px;letter-spacing:2px}
+.hero{padding:65px 8%;background:#242326;color:white}.hero h1{font-size:42px;margin:0 0 12px}.hero p{max-width:620px;color:#ddd;line-height:1.6}
+main{max-width:1100px;margin:auto;padding:35px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card,.panel{background:white;border:1px solid #e7e0d5;border-radius:12px;padding:22px}.tag{color:#98733a;font-size:12px;font-weight:bold;letter-spacing:2px}.price{font-size:23px;font-weight:bold;margin:12px 0}.btn{display:inline-block;background:var(--ink);color:white;padding:12px 18px;border-radius:6px;text-decoration:none}
+h2{margin-top:35px}.muted{color:#666;line-height:1.6}input{padding:10px;border:1px solid #ccc;border-radius:5px;width:100%;margin:5px 0 12px}button{background:var(--gold);border:0;padding:11px 16px;border-radius:5px;font-weight:bold}
+footer{background:#171719;color:#ddd;padding:25px 8%;margin-top:40px}
+</style></head><body>
+<header><strong>ZABT</strong><span>JEWELLERY & WATCHES</span></header>
+<section class="hero"><div class="tag">STYLE • DETAIL • ELEGANCE</div><h1>Discover your everyday elegance.</h1><p>ZABT is a small jewellery and watches venture founded by three friends. Explore our fashion jewellery and watch collection, and message us to enquire or place an order.</p><a class="btn" href="https://www.instagram.com/zabt_jewellery/" target="_blank">Visit Instagram</a></section>
+<main><h2>Featured products</h2><div class="grid">
+<article class="card"><div class="tag">LOCKET</div><h3>Fashion Locket</h3><p class="muted">A statement accessory for everyday styling.</p><div class="price">PKR 1,500–2,000</div><p class="muted">Illustrative selling-price range provided by the founders.</p></article>
+<article class="card"><div class="tag">JEWELLERY</div><h3>Bangles & Bracelets</h3><p class="muted">Fashion accessories for different occasions.</p><div class="price">Price on enquiry</div></article>
+<article class="card"><div class="tag">WATCHES</div><h3>Fashion Watches</h3><p class="muted">Selected styles for daily and occasion wear.</p><div class="price">Price on enquiry</div></article>
+</div>
+<h2>Our startup plan</h2><div class="panel"><p><b>Total startup capital:</b> PKR 150,000</p><p class="muted">Inventory 110,000 • Packaging 10,000 • Content setup 5,000 • Promotion 10,000 • Delivery/order reserve 5,000 • Working capital 10,000</p></div>
+<h2>Monthly financial estimate</h2><div class="grid"><div class="panel"><div class="tag">SALES</div><div class="price">PKR 250,000</div></div><div class="panel"><div class="tag">ESTIMATED EXPENSES</div><div class="price">PKR 193,000</div></div><div class="panel"><div class="tag">ESTIMATED NET PROFIT</div><div class="price">PKR 57,000</div></div></div>
+<p class="muted">These are illustrative estimates from the group presentation, not audited or actual monthly accounts.</p>
+<h2>Simple profit calculator</h2><div class="panel"><label>Monthly sales (PKR)<input id="sales" type="number" value="250000"></label><label>Monthly expenses (PKR)<input id="expenses" type="number" value="193000"></label><button onclick="calc()">Calculate profit</button><p id="result"><b>Estimated profit: PKR 57,000</b></p></div>
+<h2>Contact & order enquiry</h2><div class="panel"><p class="muted">For current availability, product photos and order details, contact ZABT through Instagram or Facebook.</p><a class="btn" href="https://www.instagram.com/zabt_jewellery/" target="_blank">Message ZABT on Instagram</a><p class="muted">Instagram / Facebook: @Zabt_jewellery</p></div></main>
+<footer><b>Z A B T</b><p>Jewellery & Watches • A student business prototype</p></footer>
+<script>function calc(){let s=Number(document.getElementById('sales').value||0),e=Number(document.getElementById('expenses').value||0);document.getElementById('result').innerHTML='<b>Estimated profit: PKR '+(s-e).toLocaleString('en-PK')+'</b>'}</script>
+</body></html>
